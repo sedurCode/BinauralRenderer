@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="nKNhe2" name="BinauralRenderer" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              companyName="SEDAudio" companyWebsite="https://sedurCode.com"
+              companyEmail="durbridge123@googlemail.com" pluginFormats="buildStandalone,buildUnity,buildVST3"
+              pluginManufacturerCode="SEDA" pluginName="BinauralRenderer">
+  <MAINGROUP id="E8Ic92" name="BinauralRenderer">
+    <GROUP id="{1E2473C8-6101-3853-513E-5EA6A865BE00}" name="Source">
+      <GROUP id="{27242201-A400-F810-8B44-2A3E741D0851}" name="WDL">
+        <FILE id="K3QAzs" name="convoengine.cpp" compile="1" resource="0" file="Source/WDL/convoengine.cpp"/>
+        <FILE id="uiJBGC" name="convoengine.h" compile="0" resource="0" file="Source/WDL/convoengine.h"/>
+        <FILE id="ZhiJx3" name="fft.c" compile="1" resource="0" file="Source/WDL/fft.c"/>
+        <FILE id="yxrg5n" name="fft.h" compile="0" resource="0" file="Source/WDL/fft.h"/>
+      </GROUP>
+      <FILE id="Zqvy5O" name="utilities.h" compile="0" resource="0" file="Source/utilities.h"/>
+      <FILE id="l1cEFD" name="AmbisonicRotation.cpp" compile="1" resource="0"
+            file="Source/AmbisonicRotation.cpp"/>
+      <FILE id="X4hl5z" name="AmbisonicRotation.h" compile="0" resource="0"
+            file="Source/AmbisonicRotation.h"/>
+      <FILE id="bBDHLS" name="AmbixLoader.cpp" compile="1" resource="0" file="Source/AmbixLoader.cpp"/>
+      <FILE id="KXmGJm" name="AmbixLoader.h" compile="0" resource="0" file="Source/AmbixLoader.h"/>
+      <FILE id="DdKdWz" name="BinauralRenderer.cpp" compile="1" resource="0"
+            file="Source/BinauralRenderer.cpp"/>
+      <FILE id="oCe07i" name="BinauralRenderer.h" compile="0" resource="0"
+            file="Source/BinauralRenderer.h"/>
+      <FILE id="UjSTVy" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="hvH2Ge" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="NI1fbz" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="rEqqDJ" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"
+               JUCE_ASIO="1"/>
+  <EXPORTFORMATS>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="NewProject" headerPath="D:\neural\pluginframework\SDK\asio"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="NewProject" headerPath="D:\neural\pluginframework\SDK\asio"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../../neural/pluginframework/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
